@@ -49,6 +49,7 @@ contagem(1, 10, 1)
 
 Prestando atenção no código acima vemos que a variável ‘b’ precisa estar somada a +1 pois por regra do uso de ‘for’, o último número do laço nunca é adicionado pois o início do laço sempre começa no zero.
 E agora se executarmos esse código vamos ver o resultado abaixo:
+
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Contagem de 1 até 10 de 1 em 1
 1 2 3 4 5 6 7 8 9 10 FIM!
@@ -63,7 +64,9 @@ else:
     print('FIM!')
 
 Neste caso, já que estamos fazendo a contagem de trás pra frente, no exercício pede de 10 até 0 pulando de 2 em 2, a variável ‘b’ terá que ser subtraída por -1 pois a contagem pode parar antes do esperado. E a variável ‘c’ tem que ser negativa pois na regra do ‘for’ só assim o laço vai ser decrescente.
+
 Agora temos que fazer com que o programa peça para o usuário fazer sua contagem personalizada:
+
 cabecalho()
 print('Agora é sua vez de personalizar a contagem!')
 a = int(input('Inicio: '))
@@ -81,6 +84,7 @@ if c < 0:
     c *= -1
 
 Esses dois últimos ‘if’ que fizemos devem estar dentro do ‘def contagem( )’ para que funcione:
+
 def contagem(a, b, c):
     if c == 0:
         c = 1
@@ -88,7 +92,9 @@ def contagem(a, b, c):
         c *= -1
     print('=-'*20)
     print(f'Contagem de {a} até {b} de {c} em {c}')
+    
 Nosso programa está finalizado!
+
 Essa jornada de aprendizado está sendo bastante desafiadora, mas aprender com o Guanabara do Curso em Video está deixando a experiencia bem mais leve e divertida, o cara é bom mesmo! (hehe)
 Agora vou postar mais vezes estas minhas experiencias, espero que gostem!
 #Python #PythonProgramming #Coding
