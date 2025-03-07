@@ -8,6 +8,7 @@ A proposta do exercício é fazer um comando ‘Contagem( )’ onde ele mostre d
 Começamos com o comando ‘def contagem( )’ que define o comando que vamos usar no programa pois no python não existe o tal. Nele definimos ‘a’ como o início da contagem, ‘b’ como o final da contagem, e ‘c’ a razão da contagem.
 Na definição do comando ‘contagem( )’ primeiro fazemos um print que veremos na execução do programa, para a estética e organização do mesmo:
 Seria:
+
 def cabecalho():
     print('=-' * 20)
 para o cabeçalho. 
@@ -15,6 +16,7 @@ O outro print, com a formatação das variáveis ‘a’, ‘b’ e ‘c’ fica
 def contagem(a, b, c):
     cabecalho()
     print(f'Contagem de {a} até {b} de {c} em {c}')
+    
 se executarmos esses dois comandos já escritos, pedindo que o programa mostre 
 contagem{1, 10, 1), veríamos o resultado abaixo:
 
@@ -23,7 +25,9 @@ Contagem de 1 até 10 de 1 em 1
 
 Process finished with exit code 0
 
-Agora precisamos escrever os comandos que o programa vai fazer quando solicitado alguma contagem específica, que no início é de 1 a 10 pulando de 1 em 1. Primeiro destacamos que se ‘a’ é maior que ‘b’ iremos usar o comando abaixo:
+Agora precisamos escrever os comandos que o programa vai fazer quando solicitado alguma contagem específica, que no início é de 1 a 10 pulando de 1 em 1. 
+Primeiro destacamos que se ‘a’ é maior que ‘b’ iremos usar o comando abaixo:
+
 if a<b:
     for c in range(a, b+1, c):
         print(c , end=' ')
@@ -44,6 +48,7 @@ def contagem(a, b, c):
             print(c , end=' ')
             sleep(0.5)
         print('FIM!')
+        
 
 contagem(1, 10, 1)
 
